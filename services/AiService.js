@@ -6,7 +6,7 @@ const { json } = require('body-parser');
 class AiService {
     constructor(){
         this.configuration = new Configuration({
-            apiKey: "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",
+            apiKey: "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",
           });
         this.openai = new OpenAIApi(this.configuration);
     }
@@ -22,7 +22,7 @@ class AiService {
 
     async getImageFromOpenAIApi(data){
         const configuration = new Configuration({
-            apiKey: "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",
+            apiKey: "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",
           });
         const openai = new OpenAIApi(configuration);
         const response = await openai.createImage({
